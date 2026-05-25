@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="joão.films — filmmaker · editor · diretor. Teixeira de Freitas, BA.">
+    <title>joão.films</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wdth,wght@0,75,400;0,75,700;1,75,300&family=Jost:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- GRAIN OVERLAY -->
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- VIDEO MODAL -->
+    <div class="modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Player de vídeo">
+        <button class="modal-close" id="modalClose" aria-label="Fechar vídeo">&#215;</button>
+        <div class="modal-content" id="modalContent">
+            <iframe id="videoFrame" frameborder="0" allowfullscreen
+                allow="autoplay; encrypted-media; picture-in-picture"></iframe>
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+        <a href="#home" class="nav-logo">
+            <span class="logo-joao">joão</span><span class="logo-sep">.</span><span class="logo-films">films</span>
+        </a>
+        <ul class="nav-links" role="list">
+            <li><a href="#works">trabalhos</a></li>
+            <li><a href="#sobre">sobre</a></li>
+            <li><a href="#contato">contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-flash" aria-hidden="true"></div>
+        <div class="hero-content">
+            <h1 class="hero-logo">
+                <span class="logo-joao">joão</span><span class="logo-sep">.</span><span class="logo-films">films</span>
+            </h1>
+            <div class="hero-base">
+                <div class="hero-rule"></div>
+                <p class="hero-sub">filmmaker · editor · diretor</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARQUEE — marcas -->
+    <div class="marquee-wrap" aria-label="Marcas com quem trabalhei">
+        <div class="marquee-track" aria-hidden="true">
+            <div class="marquee-inner" id="marqueeInner">
+                <!-- injetado por script.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- WORKS / GALERIA -->
+    <section class="works" id="works">
+        <div class="gallery" id="gallery">
+            <!-- injetado por script.js -->
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+        <div class="stats-inner">
+            <div class="stat fade-up">
+                <p class="stat-category"><span class="stat-dot"></span>DESDE 2021</p>
+                <div class="stat-value">
+                    <span class="stat-num" data-target="5">0</span><span class="stat-word">anos</span>
+                </div>
+            </div>
+            <div class="stat-rule"></div>
+            <div class="stat fade-up" style="transition-delay:.12s">
+                <p class="stat-category"><span class="stat-dot"></span>NO PORTFÓLIO</p>
+                <div class="stat-value">
+                    <span class="stat-num" data-target="55">0</span><span class="stat-word">vídeos</span>
+                </div>
+            </div>
+            <div class="stat-rule"></div>
+            <div class="stat fade-up" style="transition-delay:.24s">
+                <p class="stat-category"><span class="stat-dot"></span>CLIENTES</p>
+                <div class="stat-value">
+                    <span class="stat-num" data-target="15">0</span><span class="stat-word">marcas</span>
+                </div>
+            </div>
+            <div class="stat-rule"></div>
+            <div class="stat fade-up" style="transition-delay:.36s">
+                <p class="stat-category"><span class="stat-dot"></span>DESLOCAMENTO</p>
+                <div class="stat-value">
+                    <span class="stat-num" data-target="6">0</span><span class="stat-word">cidades</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="about" id="sobre">
+        <div class="about-inner">
+            <div class="about-photo fade-up">
+                <img src="Arquivos para site/foto-joao.jpeg"
+                     alt="João Paulo — filmmaker"
+                     loading="lazy"
+                     onerror="this.parentElement.classList.add('photo-missing')">
+            </div>
+            <div class="about-text fade-up" style="transition-delay:.15s">
+                <h2 class="about-name">
+                    joão paulo<span class="logo-sep">.</span>
+                </h2>
+                <p class="about-role">filmmaker · editor · diretor</p>
+                <div class="about-rule"></div>
+                <blockquote class="about-quote">
+                    "Não filmo lugares.<br>
+                    Filmo o ato de <em>habitar.</em>"
+                </blockquote>
+                <p class="about-bio">
+                    Cinco anos documentando histórias em vídeo — do imobiliário autoral a marcas com presença real.
+                    Caloroso na superfície. Obsessivo na execução.
+                    Teixeira de Freitas, BA · Brasil.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contact" id="contato">
+        <div class="contact-inner fade-up">
+            <p class="contact-tag">
+                <span class="contact-tag-line"></span>TEM UM FILME · LIGA<span class="contact-tag-line"></span>
+            </p>
+            <h2 class="contact-hl">
+                <span class="contact-hl-plain">vamos </span><span class="contact-hl-italic">filmar?</span>
+            </h2>
+            <p class="contact-sub">— o briefing começa numa conversa.</p>
+            <div class="contact-btns">
+                <a href="mailto:ola@joao.films" class="contact-btn">OLA@JOAO.FILMS →</a>
+                <a href="#whatsapp" class="contact-btn" target="_blank" rel="noopener noreferrer">WHATSAPP →</a>
+                <a href="https://www.instagram.com/joao.films" class="contact-btn" target="_blank" rel="noopener noreferrer">INSTAGRAM →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <span class="footer-mono" aria-label="joão.films">j<span class="logo-sep">.</span></span>
+        <span class="footer-copy">© 2026 joão.films · todos os direitos reservados</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

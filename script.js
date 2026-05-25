@@ -16,6 +16,13 @@ const VIDEOS = [
         thumb: 'https://img.youtube.com/vi/9n9p6LnreA8/maxresdefault.jpg',
     },
     {
+        id: 'hXBTnEuP3No',
+        platform: 'youtube',
+        orientation: 'landscape',
+        title: 'Tutorial',
+        thumb: 'https://img.youtube.com/vi/hXBTnEuP3No/maxresdefault.jpg',
+    },
+    {
         id: '1195147661',
         platform: 'vimeo',
         orientation: 'portrait',

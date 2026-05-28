@@ -323,7 +323,7 @@ const ioStats = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('in');
-            entry.target.querySelectorAll('.stat-num').forEach(animateCounter);
+            entry.target.querySelectorAll('.stat-num[data-target]').forEach(animateCounter);
             ioStats.unobserve(entry.target);
         }
     });

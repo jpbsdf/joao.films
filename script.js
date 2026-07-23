@@ -1,5 +1,5 @@
 /* ==========================================================
-   joão.films — script principal
+   joão.edit — script principal
 ========================================================== */
 
 /* ──────────────────────────────────────────────
@@ -19,28 +19,60 @@ const WHATSAPP_NUMBER = '5551980481934';
 ────────────────────────────────────────────────── */
 const VIDEOS = [
     {
-        id: '9n9p6LnreA8',
+        id: '1212302961',
+        platform: 'vimeo',
+        orientation: 'portrait',
+        title: 'apresentação arenna',
+        duration: '',
+        thumb: 'https://vumbnail.com/1212302961.jpg',
+    },
+    {
+        id: '1212302843',
+        platform: 'vimeo',
+        orientation: 'portrait',
+        title: 'floratta natureza',
+        duration: '',
+        thumb: 'https://vumbnail.com/1212302843.jpg',
+    },
+    {
+        id: '1212302841',
+        platform: 'vimeo',
+        orientation: 'portrait',
+        title: 'espaço floratta',
+        duration: '',
+        thumb: 'https://vumbnail.com/1212302841.jpg',
+    },
+    {
+        id: '1212301586',
+        platform: 'vimeo',
+        orientation: 'portrait',
+        title: 'divulgação trilote',
+        duration: '',
+        thumb: 'https://vumbnail.com/1212301586.jpg',
+    },
+    {
+        id: '1212299956',
+        platform: 'vimeo',
+        orientation: 'portrait',
+        title: 'treino fitness 02',
+        duration: '',
+        thumb: 'https://vumbnail.com/1212299956.jpg',
+    },
+    {
+        id: '1212299312',
+        platform: 'vimeo',
+        orientation: 'portrait',
+        title: 'treino fitness',
+        duration: '',
+        thumb: 'https://vumbnail.com/1212299312.jpg',
+    },
+    {
+        id: 'hXBTnEuP3No',
         platform: 'youtube',
         orientation: 'landscape',
-        title: 'produção audiovisual',
+        title: 'tutorial',
         duration: '',
-        thumb: 'https://img.youtube.com/vi/9n9p6LnreA8/maxresdefault.jpg',
-    },
-    {
-        id: '1195147661',
-        platform: 'vimeo',
-        orientation: 'portrait',
-        title: 'short film',
-        duration: '',
-        thumb: 'https://vumbnail.com/1195147661.jpg',
-    },
-    {
-        id: '1195147663',
-        platform: 'vimeo',
-        orientation: 'portrait',
-        title: 'reel social',
-        duration: '',
-        thumb: 'https://vumbnail.com/1195147663.jpg',
+        thumb: 'https://img.youtube.com/vi/hXBTnEuP3No/maxresdefault.jpg',
     },
     {
         id: '1195147662',
@@ -51,12 +83,28 @@ const VIDEOS = [
         thumb: 'https://vumbnail.com/1195147662.jpg',
     },
     {
-        id: 'hXBTnEuP3No',
+        id: '1195147663',
+        platform: 'vimeo',
+        orientation: 'portrait',
+        title: 'reel social',
+        duration: '',
+        thumb: 'https://vumbnail.com/1195147663.jpg',
+    },
+    {
+        id: '1195147661',
+        platform: 'vimeo',
+        orientation: 'portrait',
+        title: 'short film',
+        duration: '',
+        thumb: 'https://vumbnail.com/1195147661.jpg',
+    },
+    {
+        id: '9n9p6LnreA8',
         platform: 'youtube',
         orientation: 'landscape',
-        title: 'tutorial',
+        title: 'produção audiovisual',
         duration: '',
-        thumb: 'https://img.youtube.com/vi/hXBTnEuP3No/maxresdefault.jpg',
+        thumb: 'https://img.youtube.com/vi/9n9p6LnreA8/maxresdefault.jpg',
     },
 ];
 

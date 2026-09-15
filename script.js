@@ -19,6 +19,22 @@ const WHATSAPP_NUMBER = '5551980481934';
 ────────────────────────────────────────────────── */
 const VIDEOS = [
     {
+        id: '1226941520',
+        platform: 'vimeo',
+        orientation: 'portrait',
+        title: 'corre pro paraíso — entrevista',
+        duration: '0:53',
+        thumb: 'https://vumbnail.com/1226941520.jpg',
+    },
+    {
+        id: '1226941491',
+        platform: 'vimeo',
+        orientation: 'portrait',
+        title: 'corre pro paraíso',
+        duration: '1:00',
+        thumb: 'https://vumbnail.com/1226941491.jpg',
+    },
+    {
         id: '1212302961',
         platform: 'vimeo',
         orientation: 'portrait',

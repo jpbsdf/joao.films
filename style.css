@@ -596,18 +596,19 @@ body {
     font-weight: 700;
 }
 
-/* --- Grid por orientação: landscape ocupa 2 colunas x 1 linha, portrait 1 coluna x 2 linhas.
-   grid-auto-flow: dense preenche os buracos — funciona para qualquer quantidade/ordem de vídeos. --- */
+/* --- Grid por orientação, cada capa no tamanho original (aspect-ratio).
+   Sem "dense": a ordem visual segue a ordem do DOM (GALLERY_VIDEOS no script.js),
+   que já joga os horizontais pro final — dense poderia puxar um landscape
+   pra um buraco no meio dos verticais. --- */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-rows: 260px;
-    grid-auto-flow: dense;
+    grid-auto-rows: auto;
     gap: var(--gap);
 }
 
-.video-card[data-orientation="landscape"] { grid-column: span 2; grid-row: span 1; }
-.video-card[data-orientation="portrait"]  { grid-column: span 1; grid-row: span 2; }
+.video-card[data-orientation="landscape"] { grid-column: span 2; aspect-ratio: 16/9; }
+.video-card[data-orientation="portrait"]  { grid-column: span 1; aspect-ratio: 9/16; }
 
 /* --- Card de vídeo --- */
 .video-card {
@@ -1124,7 +1125,7 @@ body {
 @media (max-width: 1024px) {
     .gallery {
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-        grid-auto-rows: 200px;
+        grid-auto-rows: auto;
     }
 
     .about-inner {

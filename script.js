@@ -124,6 +124,13 @@ const VIDEOS = [
     },
 ];
 
+/* Vídeos horizontais (1080/16:9) sempre por último na grade —
+   verticais primeiro, na ordem em que aparecem acima. */
+const GALLERY_VIDEOS = [...VIDEOS].sort((a, b) => {
+    if (a.orientation === b.orientation) return 0;
+    return a.orientation === 'landscape' ? 1 : -1;
+});
+
 /* ──────────────────────────────────────────────
    DADOS: LOGOS DAS MARCAS
    (todos os arquivos da pasta "Marcas que trabalhei")
@@ -179,7 +186,7 @@ function buildGallery() {
     const gallery = document.getElementById('gallery');
     if (!gallery) return;
 
-    VIDEOS.forEach((video) => {
+    GALLERY_VIDEOS.forEach((video) => {
         const card = document.createElement('div');
         card.className = 'video-card fade-up';
         card.dataset.id = video.id;
@@ -216,7 +223,7 @@ function buildGallery() {
 
 async function upgradeThumbs() {
     const cards = document.querySelectorAll('.video-card');
-    const fetches = VIDEOS.map(async (video, i) => {
+    const fetches = GALLERY_VIDEOS.map(async (video, i) => {
         if (video.platform !== 'vimeo') return;
         const data = await fetchVimeoData(video.id, video.orientation);
         if (!data) return;

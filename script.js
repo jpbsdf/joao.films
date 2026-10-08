@@ -19,6 +19,14 @@ const WHATSAPP_NUMBER = '5551980481934';
 ────────────────────────────────────────────────── */
 const VIDEOS = [
     {
+        id: '1234188643',
+        platform: 'vimeo',
+        orientation: 'portrait',
+        title: 'atualização de obras',
+        duration: '0:50',
+        thumb: 'https://vumbnail.com/1234188643.jpg',
+    },
+    {
         id: '1226941520',
         platform: 'vimeo',
         orientation: 'portrait',
